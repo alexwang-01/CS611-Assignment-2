@@ -1,0 +1,10 @@
+apache-airflow==2.10.5
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.13.1
+scikit-learn==1.6.1
+xgboost-cpu==2.1.4
+pyarrow==17.0.0
+matplotlib==3.9.4
+joblib==1.4.2
+cloudpickle==2.2.1

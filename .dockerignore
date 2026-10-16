@@ -1,0 +1,8 @@
+data
+datamart
+model_bank
+*.ipynb
+__pycache__
+.ipynb_checkpoints
+.git
+*.zip

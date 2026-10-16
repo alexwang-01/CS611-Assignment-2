@@ -57,11 +57,10 @@ def main():
     X_validation_processed = transformer_stdscaler.transform(X_validation_imputed)
     X_test_processed = transformer_stdscaler.transform(X_test_imputed)
 
-    # XGBoost uses the original numeric features, including missing values
-
     lr_clf = LogisticRegression(max_iter=2000, random_state=config["random_state"])
     lr_clf.fit(X_train_processed, y_train)
 
+    # XGBoost uses numeric features directly and handles missing values
     xgb_clf = xgb.XGBClassifier(
         n_estimators=50,
         max_depth=3,
